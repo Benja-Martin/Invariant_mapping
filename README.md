@@ -27,20 +27,20 @@ Plusieurs fichiers sont à disposition :
 This repository contains the tools used to map K2 and K3 invariants. Several files are available:
   1 - hencky_invar_paper.f
       A UVARM routine written in Fortran to calculate the invariants K1; K2 and K3 from the Hencky tensor and its
-      deviator at any Gauss point of the nite element mesh.
+      deviator at any Gauss point of the finite element mesh.
   2 - Simulations.py
       A script written in Python and executed by Abaqus' internal interpreter, to automate simulations and extract data.
-      This script breaks down into three steps and requires modication by the user. The first step is to run all the
+      This script breaks down into three steps and requires modification by the user. The first step is to run all the
       simulations. The second step is to project the calculated values for the Gauss point invariants onto the mesh nodes.
-      The third step is to extract the data at the node of interest specified by the user. The modications to be made
+      The third step is to extract the data at the node of interest specified by the user. The modifications to be made
       by the user are minor: the maximum and minimum values of vertical displacements and torsion angles, and their
-      associated steps, the path to the .cae file, the name of the initial job, the name of the . odb files to be created, the
+      associated steps, the path to the .cae file, the name of the initial job, the name of the .odb files to be created, the
       name of the specimen, the IDs of the nodes from which the values of macroscopic stresses and invariants will be
       extracted, the location of the .odb files and the name of the .csv file where the data will be saved. The user can also
       choose which steps will be performed. In the case of this work, the invariant values are extracted at the level of the
       nominal section surface, and the load values are extracted at the level of the specimen top face.
   3 - Interpolation.py
-      A script written in Python using the .csv le created in the previous step extracts the data and uses an interpolation
+      A script written in Python using the .csv file created in the previous step extracts the data and uses an interpolation
       function to create the surfaces associated with each invariant and project it into the λ − τ plane. Interpolation is
       performed using the multiquadratic radial-based functions implemented in Python's Scipy.interpolate module.
 
