@@ -44,7 +44,7 @@ This repository contains the tools used to map K2 and K3 invariants. Several fil
       function to create the surfaces associated with each invariant and project it into the λ − τ plane. Interpolation is
       performed using the multiquadratic radial-based functions implemented in Python's Scipy.interpolate module.
 
-#  Cartografía de invariantes (Spanish version - Traduction made with DeepL at deep.com)
+#  Cartografia de invariantes (Spanish version - Traduction made with DeepL at deep.com)
 Este repositorio contiene las herramientas utilizadas para mapear invariantes K2 y K3. Hay varios archivos disponibles:
   1 - hencky_invar_paper.f
       Una rutina UVARM escrita en Fortran para calcular los invariantes K1, K2 y K3 a partir del tensor de Hencky y su
