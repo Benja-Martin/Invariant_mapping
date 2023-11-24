@@ -30,7 +30,7 @@ This repository contains the tools used to map K2 and K3 invariants. Several fil
       deviator at any Gauss point of the nite element mesh.
   2 - Simulations.py
       A script written in Python and executed by Abaqus' internal interpreter, to automate simulations and extract data.
-      This script breaks down into three steps and requires modication by the user. The first step is to run all the
+      This script breaks down into three steps and requires modication by the user. The first step is to run all the
       simulations. The second step is to project the calculated values for the Gauss point invariants onto the mesh nodes.
       The third step is to extract the data at the node of interest specied by the user. The modications to be made
       by the user are minor: the maximum and minimum values of vertical displacements and torsion angles, and their
