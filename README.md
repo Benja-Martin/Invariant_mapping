@@ -32,11 +32,11 @@ This repository contains the tools used to map K2 and K3 invariants. Several fil
       A script written in Python and executed by Abaqus' internal interpreter, to automate simulations and extract data.
       This script breaks down into three steps and requires modication by the user. The first step is to run all the
       simulations. The second step is to project the calculated values for the Gauss point invariants onto the mesh nodes.
-      The third step is to extract the data at the node of interest specied by the user. The modications to be made
+      The third step is to extract the data at the node of interest specified by the user. The modications to be made
       by the user are minor: the maximum and minimum values of vertical displacements and torsion angles, and their
-      associated steps, the path to the .cae le, the name of the initial job, the name of the . odb les to be created, the
+      associated steps, the path to the .cae file, the name of the initial job, the name of the . odb files to be created, the
       name of the specimen, the IDs of the nodes from which the values of macroscopic stresses and invariants will be
-      extracted, the location of the .odb les and the name of the .csv le where the data will be saved. The user can also
+      extracted, the location of the .odb files and the name of the .csv file where the data will be saved. The user can also
       choose which steps will be performed. In the case of this work, the invariant values are extracted at the level of the
       nominal section surface, and the load values are extracted at the level of the specimen top face.
   3 - Interpolation.py
